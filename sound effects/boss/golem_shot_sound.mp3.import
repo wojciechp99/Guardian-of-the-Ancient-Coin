@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/golem_shot_sound.mp3-4e1b56beab8e63bf67c9ff5146779e63.mp3str"
+
+[deps]
+
+source_file="res://sound effects/boss/golem_shot_sound.mp3"
+dest_files=[ "res://.import/golem_shot_sound.mp3-4e1b56beab8e63bf67c9ff5146779e63.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

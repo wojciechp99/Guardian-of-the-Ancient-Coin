@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_multimedia_game_sound_collect_coin_single_008_40828.mp3-61c774442590119c54f39e05bfa38fa2.mp3str"
+
+[deps]
+
+source_file="res://sound effects/coin/zapsplat_multimedia_game_sound_collect_coin_single_008_40828.mp3"
+dest_files=[ "res://.import/zapsplat_multimedia_game_sound_collect_coin_single_008_40828.mp3-61c774442590119c54f39e05bfa38fa2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

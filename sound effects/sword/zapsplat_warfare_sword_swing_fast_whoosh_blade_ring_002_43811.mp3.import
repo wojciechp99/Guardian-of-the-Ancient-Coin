@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_002_43811.mp3-6238f4a2e2cb1fbd7ef366a78f879c74.mp3str"
+
+[deps]
+
+source_file="res://sound effects/sword/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_002_43811.mp3"
+dest_files=[ "res://.import/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_002_43811.mp3-6238f4a2e2cb1fbd7ef366a78f879c74.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

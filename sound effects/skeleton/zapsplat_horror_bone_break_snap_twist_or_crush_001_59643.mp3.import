@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_horror_bone_break_snap_twist_or_crush_001_59643.mp3-b141afeecc0a9d575cff1bdac099472b.mp3str"
+
+[deps]
+
+source_file="res://sound effects/skeleton/zapsplat_horror_bone_break_snap_twist_or_crush_001_59643.mp3"
+dest_files=[ "res://.import/zapsplat_horror_bone_break_snap_twist_or_crush_001_59643.mp3-b141afeecc0a9d575cff1bdac099472b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

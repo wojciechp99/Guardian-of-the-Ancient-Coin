@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://sound effects/coin/zapsplat_multimedia_game_sound_collect_coin_single_008_40828.mp3" type="AudioStream" id=1]
+[ext_resource path="res://assets/tileset/Assets.png" type="Texture" id=2]
+[ext_resource path="res://purple_coin.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 11.7023
+height = 9.58227
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 960, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 1024, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 1088, 64, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 1152, 64, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 3.0
+} ]
+
+[sub_resource type="Animation" id=7]
+resource_name = "collected"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -21.75 ), Vector2( 0, -37.5 ), Vector2( 0, -55.25 ), Vector2( 0, -69 ), Vector2( 0, -54.25 ), Vector2( 0, -43.25 ), Vector2( 0, -31 ), Vector2( 0, -19.5 ), Vector2( 0, -7.25 ), Vector2( 0, 0 ) ]
+}
+
+[node name="purple_coin" type="Area2D"]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 6 )
+animation = "idle"
+frame = 2
+playing = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/collected = SubResource( 7 )
+
+[node name="SoundPurpleCoinCollected" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_purple_coin_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

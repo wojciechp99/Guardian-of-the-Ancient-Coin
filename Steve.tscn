@@ -1,0 +1,141 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://assets/character/attack-03.png" type="Texture" id=1]
+[ext_resource path="res://assets/character/run-07.png" type="Texture" id=2]
+[ext_resource path="res://assets/character/idle-02.png" type="Texture" id=3]
+[ext_resource path="res://assets/character/dead-02.png" type="Texture" id=4]
+[ext_resource path="res://assets/character/idle-06.png" type="Texture" id=5]
+[ext_resource path="res://assets/character/attack-02.png" type="Texture" id=6]
+[ext_resource path="res://assets/character/idle-04.png" type="Texture" id=7]
+[ext_resource path="res://assets/character/idle-01.png" type="Texture" id=8]
+[ext_resource path="res://assets/character/attack-01.png" type="Texture" id=9]
+[ext_resource path="res://assets/character/idle-03.png" type="Texture" id=10]
+[ext_resource path="res://assets/character/attack-04.png" type="Texture" id=11]
+[ext_resource path="res://assets/character/attack-06.png" type="Texture" id=12]
+[ext_resource path="res://assets/character/attack-07-continue.png" type="Texture" id=13]
+[ext_resource path="res://assets/character/dead-01.png" type="Texture" id=14]
+[ext_resource path="res://assets/character/dead-03.png" type="Texture" id=15]
+[ext_resource path="res://assets/character/jump-landing-01.png" type="Texture" id=16]
+[ext_resource path="res://assets/character/jump-landing-02.png" type="Texture" id=17]
+[ext_resource path="res://assets/character/dead-04.png" type="Texture" id=18]
+[ext_resource path="res://assets/character/jump-02.png" type="Texture" id=19]
+[ext_resource path="res://assets/character/idle-05.png" type="Texture" id=20]
+[ext_resource path="res://assets/character/jump-landing-03.png" type="Texture" id=21]
+[ext_resource path="res://assets/character/run-05.png" type="Texture" id=22]
+[ext_resource path="res://assets/character/attack-05.png" type="Texture" id=23]
+[ext_resource path="res://assets/character/run-06.png" type="Texture" id=24]
+[ext_resource path="res://assets/character/run-04.png" type="Texture" id=25]
+[ext_resource path="res://assets/character/jump-01.png" type="Texture" id=26]
+[ext_resource path="res://assets/character/run-03.png" type="Texture" id=27]
+[ext_resource path="res://assets/character/attack-08-continue.png" type="Texture" id=28]
+[ext_resource path="res://assets/character/run-02.png" type="Texture" id=29]
+[ext_resource path="res://assets/character/run-01.png" type="Texture" id=30]
+[ext_resource path="res://Steve.gd" type="Script" id=31]
+[ext_resource path="res://sound effects/steve/zapsplat_human_male_vocalisation_pain_uhhh_66512.mp3" type="AudioStream" id=32]
+[ext_resource path="res://sound effects/sword/zapsplat_warfare_sword_swing_fast_whoosh_blade_ring_002_43811.mp3" type="AudioStream" id=33]
+[ext_resource path="res://sound effects/steve/foley_footsteps_person_run_up_and_stop_gravel_ground.mp3" type="AudioStream" id=34]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 3 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 4 ), ExtResource( 15 ), ExtResource( 18 ) ],
+"loop": false,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "run",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 28 ), ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "attack2",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "attack",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "jump_landing",
+"speed": 5.0
+} ]
+
+[node name="Steve" type="KinematicBody2D"]
+position = Vector2( 8.00903, 0 )
+collision_mask = 30
+script = ExtResource( 31 )
+health = 100
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 4
+playing = true
+
+[node name="CollisionPolygon_h_right" type="CollisionPolygon2D" parent="."]
+visible = false
+scale = Vector2( 1.9177, 1.92926 )
+polygon = PoolVector2Array( -9.60455, 16.6013, 2.27314, 16.6031, 2.38928, 6.61703, 2.34029, 4.45025, 2.30521, -4.84513, 0.972271, -7.68637, -0.04496, -8.17745, 0.038, -14.404, -8.016, -14.029, -7.37604, -7.30052, -10.0068, -4.84514, -10.112, -0.951596, -7.79696, 4.3801, -8.9545, 9.8521 )
+
+[node name="CollisionPolygon_h_left" type="CollisionPolygon2D" parent="."]
+visible = false
+scale = Vector2( -2.0023, 1.92926 )
+polygon = PoolVector2Array( -9.60455, 16.6013, 2.40687, 16.5899, 2.40687, 6.91645, 2.34029, 4.45025, 2.30521, -4.84513, 0.972271, -7.68637, -0.04496, -8.17745, 0.0377007, -14.4036, -8.0157, -14.029, -7.37604, -7.30052, -10.0068, -4.84514, -10.112, -0.951596, -7.79696, 4.3801, -8.9545, 9.8521 )
+
+[node name="AttackArea" type="Area2D" parent="." groups=[
+"Sword",
+]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AttackArea"]
+visible = false
+scale = Vector2( 2, 2 )
+polygon = PoolVector2Array( -4.0657, 11.1881, 6.08096, 7.41257, 10.9183, -0.374397, 10.8003, -6.86353, 8.32265, -11.229, -1.23407, -15.3584, 4.19321, -15.8303, 12.924, -11.8189, 15.7557, -6.62756, 15.6377, -0.256413, 13.514, 6.82265, 7.37878, 11.1881, 2.30546, 12.3679, -4.30167, 12.1319 )
+disabled = true
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="PlatformDetector" type="RayCast2D" parent="."]
+position = Vector2( -8.00903, 32 )
+enabled = true
+cast_to = Vector2( 0, 16 )
+collision_mask = 32
+
+[node name="PlatformDetector2" type="RayCast2D" parent="."]
+position = Vector2( 7.99097, 32 )
+cast_to = Vector2( 0, 16 )
+collision_mask = 32
+
+[node name="SoundDamage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 32 )
+volume_db = -15.0
+
+[node name="SoundAttack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 33 )
+volume_db = -15.0
+
+[node name="SoundWalking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 34 )
+volume_db = -15.0
+pitch_scale = 0.8
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_attack_Sprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]

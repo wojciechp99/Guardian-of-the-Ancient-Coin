@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_animals_rat_death_screech_003_72159.mp3-344a80d4928e79a1d49f2746fc8c1090.mp3str"
+
+[deps]
+
+source_file="res://sound effects/rat/zapsplat_animals_rat_death_screech_003_72159.mp3"
+dest_files=[ "res://.import/zapsplat_animals_rat_death_screech_003_72159.mp3-344a80d4928e79a1d49f2746fc8c1090.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

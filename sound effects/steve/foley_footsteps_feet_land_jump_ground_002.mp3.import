@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/foley_footsteps_feet_land_jump_ground_002.mp3-574d83b8f0d4657a066e9bb910efaf4f.mp3str"
+
+[deps]
+
+source_file="res://sound effects/steve/foley_footsteps_feet_land_jump_ground_002.mp3"
+dest_files=[ "res://.import/foley_footsteps_feet_land_jump_ground_002.mp3-574d83b8f0d4657a066e9bb910efaf4f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

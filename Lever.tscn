@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Lever.gd" type="Script" id=1]
+[ext_resource path="res://assets/locked_doors/lever.png" type="Texture" id=2]
+[ext_resource path="res://sound effects/door/zapsplat_vehicles_car_indicator_blinker_stick_switch_move_flick_toyota_rav4_003_29641.mp3" type="AudioStream" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20.4886, 17.3241 )
+
+[node name="Lever" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.52588e-05, 14.8492 )
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.6
+
+[node name="SoundLeverChange" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -15.0
+
+[connection signal="area_entered" from="." to="." method="_on_Lever_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

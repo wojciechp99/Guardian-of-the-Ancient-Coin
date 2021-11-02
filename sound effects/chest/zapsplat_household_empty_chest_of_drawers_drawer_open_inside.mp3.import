@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_household_empty_chest_of_drawers_drawer_open_inside.mp3-9693c1455ec8352be5107e20ad2ba1b7.mp3str"
+
+[deps]
+
+source_file="res://sound effects/chest/zapsplat_household_empty_chest_of_drawers_drawer_open_inside.mp3"
+dest_files=[ "res://.import/zapsplat_household_empty_chest_of_drawers_drawer_open_inside.mp3-9693c1455ec8352be5107e20ad2ba1b7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

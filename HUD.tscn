@@ -1,0 +1,149 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/heart/Item 3-1.png.png" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/heart/Cuore6.png" type="Texture" id=3]
+[ext_resource path="res://assets/heart/Cuore7.png" type="Texture" id=4]
+[ext_resource path="res://assets/heart/Cuore8.png" type="Texture" id=5]
+[ext_resource path="res://assets/heart/Cuore1.png" type="Texture" id=6]
+[ext_resource path="res://assets/heart/Cuore2.png" type="Texture" id=7]
+[ext_resource path="res://assets/heart/Cuore3.png" type="Texture" id=8]
+[ext_resource path="res://assets/heart/Cuore4.png" type="Texture" id=9]
+[ext_resource path="res://assets/heart/Cuore5.png" type="Texture" id=10]
+[ext_resource path="res://HUD.gd" type="Script" id=11]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.52549, 0.52549, 0.52549, 0.729412 )
+corner_radius_bottom_right = 20
+shadow_size = 4
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 7.0
+} ]
+
+[sub_resource type="DynamicFont" id=3]
+size = 18
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.52549, 0.52549, 0.52549, 0.729412 )
+corner_radius_top_right = 20
+
+[sub_resource type="DynamicFont" id=6]
+size = 18
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 18
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 11 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 136.0
+margin_bottom = 60.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Panel"]
+position = Vector2( 34, 32 )
+scale = Vector2( 2.75, 2.5 )
+frames = SubResource( 2 )
+animation = "idle"
+frame = 4
+playing = true
+
+[node name="Heart" type="TextureRect" parent="."]
+visible = false
+margin_left = -48.0
+margin_top = -48.0
+margin_right = 16.0
+margin_bottom = 16.0
+rect_scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="=" type="Label" parent="."]
+margin_left = 68.0
+margin_top = -4.0
+margin_right = 80.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 3 )
+text = "="
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hp" type="Label" parent="."]
+margin_left = 88.0
+margin_right = 109.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 4 )
+text = "#"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Panel3" type="Panel" parent="."]
+margin_top = 544.0
+margin_right = 192.0
+margin_bottom = 600.0
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text2" type="Label" parent="."]
+margin_left = 4.0
+margin_top = 560.0
+margin_right = 136.0
+margin_bottom = 583.0
+custom_fonts/font = SubResource( 6 )
+text = "Coins collected:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="coins" type="Label" parent="."]
+margin_left = 148.0
+margin_top = 560.0
+margin_right = 172.0
+margin_bottom = 583.0
+custom_fonts/font = SubResource( 7 )
+text = "##"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

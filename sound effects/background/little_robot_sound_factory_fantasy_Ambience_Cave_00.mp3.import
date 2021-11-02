@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/little_robot_sound_factory_fantasy_Ambience_Cave_00.mp3-0affca92dcaa305872123f82b9bc3089.mp3str"
+
+[deps]
+
+source_file="res://sound effects/background/little_robot_sound_factory_fantasy_Ambience_Cave_00.mp3"
+dest_files=[ "res://.import/little_robot_sound_factory_fantasy_Ambience_Cave_00.mp3-0affca92dcaa305872123f82b9bc3089.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

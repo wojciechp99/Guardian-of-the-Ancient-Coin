@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/warfare_medieval_spear_swing_002.mp3-3f87e5b64f7e9031dd4c0b3f515c4cd1.mp3str"
+
+[deps]
+
+source_file="res://sound effects/rat/warfare_medieval_spear_swing_002.mp3"
+dest_files=[ "res://.import/warfare_medieval_spear_swing_002.mp3-3f87e5b64f7e9031dd4c0b3f515c4cd1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

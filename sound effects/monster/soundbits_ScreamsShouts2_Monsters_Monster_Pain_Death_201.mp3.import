@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/soundbits_ScreamsShouts2_Monsters_Monster_Pain_Death_201.mp3-17b7cad86f50cc18f6aa6a9822d8dc4a.mp3str"
+
+[deps]
+
+source_file="res://sound effects/monster/soundbits_ScreamsShouts2_Monsters_Monster_Pain_Death_201.mp3"
+dest_files=[ "res://.import/soundbits_ScreamsShouts2_Monsters_Monster_Pain_Death_201.mp3-17b7cad86f50cc18f6aa6a9822d8dc4a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/foley_footsteps_person_run_up_and_stop_gravel_ground.mp3-0dc26bfbb6c2f6f9aec3d624c86e2f53.mp3str"
+
+[deps]
+
+source_file="res://sound effects/steve/foley_footsteps_person_run_up_and_stop_gravel_ground.mp3"
+dest_files=[ "res://.import/foley_footsteps_person_run_up_and_stop_gravel_ground.mp3-0dc26bfbb6c2f6f9aec3d624c86e2f53.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

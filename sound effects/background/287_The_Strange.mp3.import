@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/287_The_Strange.mp3-936f2144483c6958613e9343d97ffc32.mp3str"
+
+[deps]
+
+source_file="res://sound effects/background/287_The_Strange.mp3"
+dest_files=[ "res://.import/287_The_Strange.mp3-936f2144483c6958613e9343d97ffc32.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

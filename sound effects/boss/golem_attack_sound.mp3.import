@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/golem_attack_sound.mp3-27fdb0885cc00ee0f3599328dbeaebe1.mp3str"
+
+[deps]
+
+source_file="res://sound effects/boss/golem_attack_sound.mp3"
+dest_files=[ "res://.import/golem_attack_sound.mp3-27fdb0885cc00ee0f3599328dbeaebe1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

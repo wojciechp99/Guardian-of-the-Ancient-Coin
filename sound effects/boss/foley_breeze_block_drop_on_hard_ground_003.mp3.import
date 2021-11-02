@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/foley_breeze_block_drop_on_hard_ground_003.mp3-59985925003d520ef6d8773593b5df88.mp3str"
+
+[deps]
+
+source_file="res://sound effects/boss/foley_breeze_block_drop_on_hard_ground_003.mp3"
+dest_files=[ "res://.import/foley_breeze_block_drop_on_hard_ground_003.mp3-59985925003d520ef6d8773593b5df88.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

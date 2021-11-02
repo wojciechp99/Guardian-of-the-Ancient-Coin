@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_science_fiction_door_open_hiss_air_release_then_auto_motor_drome_44436.mp3-88158d11b3e113cb59f13fe6d3816788.mp3str"
+
+[deps]
+
+source_file="res://sound effects/door/zapsplat_science_fiction_door_open_hiss_air_release_then_auto_motor_drome_44436.mp3"
+dest_files=[ "res://.import/zapsplat_science_fiction_door_open_hiss_air_release_then_auto_motor_drome_44436.mp3-88158d11b3e113cb59f13fe6d3816788.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

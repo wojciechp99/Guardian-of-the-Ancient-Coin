@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/golem_death_sound.mp3-e14791e17d57f937e50f9cb7288b6b61.mp3str"
+
+[deps]
+
+source_file="res://sound effects/boss/golem_death_sound.mp3"
+dest_files=[ "res://.import/golem_death_sound.mp3-e14791e17d57f937e50f9cb7288b6b61.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
