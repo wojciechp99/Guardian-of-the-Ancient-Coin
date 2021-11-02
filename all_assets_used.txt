@@ -1,0 +1,41 @@
+Here you can find links to almost all assets I used in my game.
+If you can't find a link to asset you are looking for, that's becouse i created/edited it myself
+or my friend drew it for me.
+
+HUB:
+	HEART: https://mikiz.itch.io/full-heart-animation
+
+	FONT: BalsamiqSans-Bold
+	
+PORTALS: https://elthen.itch.io/2d-pixel-art-portal-sprites
+
+ENEMIES:
+	SLIME(used from this tutorial): https://www.youtube.com/watch?v=ROYG4widsXc&ab_channel=BornCG
+	
+	RAT: Created by my friend
+
+	GOLEM(level5): https://darkpixel-kronovi.itch.io/mecha-golem-free
+
+	SKELETON: https://astrobob.itch.io/animated-pixel-art-skeleton
+
+	MONSTER: https://elthen.itch.io/2d-pixel-art-shardsoul-slayer-sprites
+
+	BAT: https://opengameart.org/content/animated-rat-and-bat
+	
+FIRE ARROW: created by my friend
+
+TREE(level1): https://bakudas.itch.io/generic-platformer-pack
+
+BIGGER PACKS:
+	TILEMAP(contains: chest, pot, lever, coins, etc): 
+	https://bakudas.itch.io/generic-dungeon-pack
+
+	TILEMAP(contais: door):
+	https://o-lobster.itch.io/platformmetroidvania-pixel-art-asset-pack
+
+	TILEMAP(contais: Player):
+	https://szadiart.itch.io/pixel-platformer-castle
+
+	BACKGROUND(level1): https://aamatniekss.itch.io/free-pixelart-tileset-cute-forest
+	
+	BACKGROUND(level3): https://lil-cthulhu.itch.io/pixel-art-cave-background
